@@ -10,6 +10,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
+          
           {/*Navigation Bar*/}
           <nav className="Navigation">
             <p><NavLink to="/">Home</NavLink></p>
