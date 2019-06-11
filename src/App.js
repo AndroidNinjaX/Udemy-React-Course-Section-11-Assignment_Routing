@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //Import Route from 'react-router-dom'
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 import Courses from './containers/Courses/Courses';
 import Users from './containers/Users/Users';
 import "./App.css";
@@ -12,9 +12,9 @@ class App extends Component {
         <div className="App">
           {/*Navigation Bar*/}
           <nav className="Navigation">
-            <p><Link to="/">Home</Link></p>
-            <p><Link to="/Courses">Courses</Link></p>
-            <p><Link to="/Users">Users</Link></p>
+            <p><NavLink to="/">Home</NavLink></p>
+            <p><NavLink to="/Courses">Courses</NavLink></p>
+            <p><NavLink to="/Users">Users</NavLink></p>
           </nav>
 
           {/*Added Routes to the "Courses" component, and "Users" components.*/}
