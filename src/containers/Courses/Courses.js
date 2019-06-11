@@ -15,6 +15,12 @@ class Courses extends Component {
         ]
     }
 
+    selectCourseHandler(id) {
+        return(
+            <Course courseID={id}/>
+        );
+    }
+
     render () {
         return (
             <div>
@@ -24,8 +30,13 @@ class Courses extends Component {
                         this.state.courses.map( course => {
                             return (
                                 <NavLink to={"/" + course.id} key={course.id}>
-                                    <Course courseTitle={course.title} courseID={course.id}/>
-                                    <article className="Course">{course.title}</article>;
+                                    <Course
+                                        courseName={course.title}
+                                        courseID={course.id}>
+                                    </Course>
+                                    {/*<article 
+                                        className="Course"
+                                    clicked={() => this.selectCourseHandler(course.id)}>{course.title}</article>;*/}
                                 </NavLink>
                             );
                         } )
