@@ -1,4 +1,8 @@
-.nav {
+.Navigation {
     display: flex;
     flex-direction: row;   
+}
+
+.CoursesCSS {
+    color: blue;
 }
