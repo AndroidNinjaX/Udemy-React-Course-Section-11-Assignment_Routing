@@ -10,12 +10,12 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          
+
           {/*Navigation Bar*/}
           <nav className="Navigation">
-            <p><NavLink to="/">Home</NavLink></p>
-            <p><NavLink to="/Courses">Courses</NavLink></p>
-            <p><NavLink to="/Users">Users</NavLink></p>
+            <p><NavLink to="/" exact activeClassName="activeClass">Home</NavLink></p>
+            <p><NavLink to="/Courses" exact activeClassName="activeClass">Courses</NavLink></p>
+            <p><NavLink to="/Users" exact activeClassName="activeClass">Users</NavLink></p>
           </nav>
 
           {/*Added Routes to the "Courses" component, and "Users" components.*/}

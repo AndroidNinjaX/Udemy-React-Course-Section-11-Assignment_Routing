@@ -1,8 +1,19 @@
 .Navigation {
     display: flex;
     flex-direction: row;
+    font-size: 30px;
 }
 
 .Navigation p {
     padding: 20px;
+}
+
+/*Remove underline from Link*/
+a:link {
+    text-decoration: none;
+}
+
+/*Change color of active link*/
+.activeClass {  
+    color: green;
 }
