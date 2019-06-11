@@ -4,8 +4,8 @@ class Course extends Component {
     render () {
         return (
             <div>
-                <h1>_COURSE_TITLE_</h1>
-                <p>You selected the Course with ID: _ID_</p>
+                <h1>{this.props.courseTitle}</h1>
+                <p>You selected the Course with ID: {this.props.courseID}</p>
             </div>
         );
     }

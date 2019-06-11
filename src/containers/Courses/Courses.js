@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+//Import the NavLink componet from React-Router-Dom
 import { NavLink } from 'react-router-dom';
+//Import the Course component
+import Course from '../Course/Course';
 
 import './Courses.css';
 
@@ -21,6 +24,7 @@ class Courses extends Component {
                         this.state.courses.map( course => {
                             return (
                                 <NavLink to={"/" + course.id} key={course.id}>
+                                    <Course courseTitle={course.title} courseID={course.id}/>
                                     <article className="Course">{course.title}</article>;
                                 </NavLink>
                             );
