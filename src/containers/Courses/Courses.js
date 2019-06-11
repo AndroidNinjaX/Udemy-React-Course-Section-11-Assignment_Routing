@@ -15,6 +15,7 @@ class Courses extends Component {
         return (
             <div>
                 <h1>Amazing Udemy Courses</h1>
+                {/*
                 <section className="Courses">
                     {
                         this.state.courses.map( course => {
@@ -22,6 +23,7 @@ class Courses extends Component {
                         } )
                     }
                 </section>
+                */}
             </div>
         );
     }
