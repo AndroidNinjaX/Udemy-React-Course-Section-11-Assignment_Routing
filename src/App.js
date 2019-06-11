@@ -16,7 +16,6 @@ class App extends Component {
           <li>Load the "Course" component as a nested component of "Courses"</li>
           <li>Add a 404 error page and render it for any unknown routes</li>
           <li>Redirect requests to /all-courses to /courses (=> Your "Courses" page)</li>
-          <li>List Item</li>
         </ol>
       </div>
     );
