@@ -1,8 +1,8 @@
 .Navigation {
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;
 }
 
-.CoursesCSS {
-    color: blue;
+.Navigation p {
+    padding: 20px;
 }
