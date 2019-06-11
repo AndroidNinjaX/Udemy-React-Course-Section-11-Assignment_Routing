@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          {/*Added Routes to the "Courses" component, and "Users" component.*/}
+          {/*Added Routes to the "Courses" component, and "Users" components.*/}
           <Route path="/courses" component={Courses} />
           <Route path="/users" component={Users} />
           <ol style={{textAlign: 'left'}}>
