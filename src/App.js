@@ -11,7 +11,12 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
 
-          {/*Navigation Bar*/}
+          {
+            /*------------------
+            Navigation Bar
+              -Use "NavLink" so I can specify an "active" link.
+            ------------------*/
+          }
           <nav className="Navigation">
             <p><NavLink to="/" exact activeClassName="activeClass">Home</NavLink></p>
             <p><NavLink to="/Courses" exact activeClassName="activeClass">Courses</NavLink></p>
@@ -24,7 +29,7 @@ class App extends Component {
 
           <ol style={{textAlign: 'left'}}>
             <li><b>COMPLETE! </b>Add Routes to load "Users" and "Courses" on different pages (by entering a URL, without Links)</li>
-            <li>Add a simple navigation with two links => One leading to "Users", one leading to "Courses"</li>
+            <li><b>COMPLETE! </b>Add a simple navigation with two links => One leading to "Users", one leading to "Courses"</li>
             <li>Make the courses in "Courses" clickable by adding a link and load the "Course" component in the place of "Courses" (without passing any data for now)</li>
             <li>Pass the course ID to the "Course" page and output it there</li>
             <li>Pass the course title to the "Course" page - pass it as a param or score bonus points by passing it as query params (you need to manually parse them though!)</li>
