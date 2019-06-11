@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 //Import Route from 'react-router-dom'
-import { BrowserRouter, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
 import Courses from './containers/Courses/Courses';
+import Course from './containers/Course/Course';
 import Users from './containers/Users/Users';
 import "./App.css";
 
@@ -24,8 +25,11 @@ class App extends Component {
           </nav>
 
           {/*Added Routes to the "Courses" component, and "Users" components.*/}
-          <Route path="/courses" component={Courses} />
-          <Route path="/users" component={Users} />
+          <Switch>
+            <Route path="/courses/:id" exact component={Course} />
+            <Route path="/courses" component={Courses} />
+            <Route path="/users" component={Users} />
+          </Switch>
 
           <ol style={{textAlign: 'left'}}>
             <li><b>COMPLETE! </b>Add Routes to load "Users" and "Courses" on different pages (by entering a URL, without Links)</li>
