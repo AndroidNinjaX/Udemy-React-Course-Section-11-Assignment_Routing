@@ -17,14 +17,17 @@ class Courses extends Component {
 
     componentDidMount () {
         console.log("[Course's] component did mount.");
+        console.log("****************************************");
     }
 
     componentDidUpdate () {
         console.log("[Course's] component updated.");
+        console.log("****************************************");
     }
 
     componentWillUnmount () {
         console.log("[Course's] component unmounted.");
+        console.log("****************************************");
     }
 
     selectCourseHandler(id) {
