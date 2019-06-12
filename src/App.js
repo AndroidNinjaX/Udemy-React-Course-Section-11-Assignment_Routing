@@ -26,7 +26,7 @@ class App extends Component {
 
           {/*Added Routes to the "Courses" component, and "Users" components.*/}
           <Switch>
-            <Route path="/courses/:title" exact component={Course} />
+            
             <Route path="/courses" component={Courses} />
             <Route path="/users" component={Users} />
           </Switch>

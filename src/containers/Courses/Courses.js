@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 //Import the Course component
 import Course from '../Course/Course';
+//Import Route
+import { Route } from 'react-router-dom';
 
 import './Courses.css';
 
@@ -30,35 +32,28 @@ class Courses extends Component {
         console.log("****************************************");
     }
 
-    selectCourseHandler(id) {
-        return(
-            <Course courseID={id}/>
-        );
-    }
-
     render () {
+        /*------------------
+        -Itterate through the "state.courses" and return each one as a linked component.
+            -Set each link to the "title".
+            -Set the "key" to the "id" of the course.
+        -Pass in the current object as "props" to the "Course" component.
+        ------------------*/
+        const courses = this.state.courses.map( course => {
+                            return (
+                                <NavLink to={"/courses/" + course.title} key={course.id}>
+                                    <Course courseInfo={course} />
+                                </NavLink>
+                            );
+                        } );
+
         return (
             <div>
                 <h1>Amazing Udemy Courses</h1>
                 <section className="Courses">
-                    {
-                        /*------------------
-                        -Itterate through the "state.courses" and return each one as a linked component.
-                            -Set each link to the "title".
-                            -Set the "key" to the "id" of the course.
-                        -Pass in the current object as "props" to the "Course" component.
-                        ------------------*/
-                        this.state.courses.map( course => {
-                            return (
-                                <NavLink to={"/courses/" + course.title} key={course.id}>
-                                    <Course
-                                        courseInfo={course}>
-                                    </Course>
-                                </NavLink>
-                            );
-                        } )
-                    }
+                    {courses}
                 </section>
+                <Route path="/courses/:title" exact component={Course} />
             </div>
         );
     }
