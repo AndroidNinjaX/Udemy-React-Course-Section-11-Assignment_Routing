@@ -46,6 +46,7 @@ class Courses extends Component {
                             return (
                                 <NavLink to={"/courses/" + course.id} key={course.id}>
                                     <Course
+                                        courseInfo={course}
                                         courseTitle={course.title}
                                         courseID={course.id}>
                                     </Course>
