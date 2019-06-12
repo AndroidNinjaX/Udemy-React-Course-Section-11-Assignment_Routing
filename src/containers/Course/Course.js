@@ -7,7 +7,19 @@ class Course extends Component {
         console.log("[Course] component did mount.");
         console.log("Here are your props");
         console.log(this.props);
+        console.log("****************************************");
     };
+    componentDidUpdate () {
+        console.log("[Course] component updated.");
+        console.log("Here are your new props");
+        console.log(this.props);
+        console.log("****************************************");
+    }
+
+    componentWillUnmount () {
+        console.log("[Course] component unmounted.");
+        console.log("****************************************");
+    }
     
     render () {
         return (
