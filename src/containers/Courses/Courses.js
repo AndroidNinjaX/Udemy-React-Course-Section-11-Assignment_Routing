@@ -51,9 +51,6 @@ class Courses extends Component {
                                         courseTitle={course.title}
                                         courseID={course.id}>
                                     </Course>
-                                    {/*<article 
-                                        className="Course"
-                                    clicked={() => this.selectCourseHandler(course.id)}>{course.title}</article>;*/}
                                 </NavLink>
                             );
                         } )
