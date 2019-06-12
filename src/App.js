@@ -25,9 +25,10 @@ class App extends Component {
 
           {/*Added Routes to the "Courses" component, and "Users" components.*/}
           <Switch>
-            
+            <Route path="/" exact render={() => <h1>Home</h1>} />
             <Route path="/courses" component={Courses} />
             <Route path="/users" component={Users} />
+            <Route render={() => <h1>404 Not Found</h1>} />
           </Switch>
 
           <ol style={{textAlign: 'left'}}>
