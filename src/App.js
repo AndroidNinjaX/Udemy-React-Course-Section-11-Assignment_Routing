@@ -23,7 +23,17 @@ class App extends Component {
             <p><NavLink to="/Users" exact activeClassName="activeClass">Users</NavLink></p>
           </nav>
 
-          {/*Added Routes to the "Courses" component, and "Users" components.*/}
+          {/*------------------
+          Routes to different sections are following:
+          -Home Route
+            -Main page
+          -Courses Route
+            -List of all courses.
+          -Users Route
+            -Location for Users to go.
+          -404 Route
+            -If a link is unavaiable, render 404.
+          ------------------*/}
           <Switch>
             <Route path="/" exact render={() => <h1>Home</h1>} />
             <Route path="/courses" component={Courses} />
