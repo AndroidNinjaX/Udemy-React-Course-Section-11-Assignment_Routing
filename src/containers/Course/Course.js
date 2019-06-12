@@ -50,6 +50,7 @@ class Course extends Component {
             title = this.props.match.params.title;
             output = <div>
                         <h1>{title}</h1>
+                        <p>This is an AWESOME Course!</p>
                     </div>;
         }
 
