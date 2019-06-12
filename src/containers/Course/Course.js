@@ -44,7 +44,7 @@ class Course extends Component {
             title = this.props.courseInfo.title;
             output = <div>
                         <h1>{title}</h1>
-                        <p>You selected the Course with ID: {this.props.courseID}</p>
+                        <p>You selected the Course with ID: {this.props.courseInfo.id}</p>
                     </div>;
         } else {
             title = this.props.match.params.title;
