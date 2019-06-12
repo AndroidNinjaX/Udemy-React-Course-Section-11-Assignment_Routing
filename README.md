@@ -1,8 +1,8 @@
 # This is the Section 11 Assignment 3 of the Udemy React Course: [React - The Complete Guide](https://www.udemy.com/react-the-complete-guide-incl-redux/)
 
-## This assignment was about Routing in React.
+### This assignment was to demonstrate Routing in React.
 
-### Here are the Objectives
+## Here are the Objectives
 
 * Add Routes to load "Users" and "Courses" on different pages (by entering a URL, without Links)
 * Add a simple navigation with two links => One leading to "Users", one leading to "Courses"
@@ -13,6 +13,7 @@
 * Add a 404 error page and render it for any unknown routes
 * Redirect requests to /all-courses to /courses (=> Your "Courses" page)
 
+## To use this application follow the steps in the "how-to-use.txt" file.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
