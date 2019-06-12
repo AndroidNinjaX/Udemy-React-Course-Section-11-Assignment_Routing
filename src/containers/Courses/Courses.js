@@ -44,7 +44,7 @@ class Courses extends Component {
                     {
                         this.state.courses.map( course => {
                             return (
-                                <NavLink to={"/courses/" + course.id} key={course.id}>
+                                <NavLink to={"/courses/" + course.title} key={course.id}>
                                     <Course
                                         courseInfo={course}
                                         courseTitle={course.title}

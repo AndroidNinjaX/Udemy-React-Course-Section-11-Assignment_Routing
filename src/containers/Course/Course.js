@@ -20,11 +20,19 @@ class Course extends Component {
         console.log("[Course] component unmounted.");
         console.log("****************************************");
     }
-    
+
     render () {
+        let title = null;
+        
+        if(this.props.courseInfo){
+            title = this.props.courseInfo.title;
+        } else if(this.props.match.params.title) {
+            title = this.props.match.params.title;
+        }
+
         return (
             <div className="Course">
-                <h1>{this.props.courseTitle}</h1>
+                <h1>{title}</h1>
                 <p>You selected the Course with ID: {this.props.courseID}</p>
             </div>
         );
