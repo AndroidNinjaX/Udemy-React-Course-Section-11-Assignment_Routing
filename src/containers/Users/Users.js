@@ -6,6 +6,7 @@ class Users extends Component {
         return (
             <div>
                 <h1>The Users Page</h1>
+                <p>Welcome Users!</p>
             </div>
         );
     }
