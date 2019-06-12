@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 //Import Route from 'react-router-dom'
 import { BrowserRouter, Route, NavLink, Switch, Redirect } from 'react-router-dom';
+//Import all of the components.
 import Home from './containers/Home/Home';
 import Courses from './containers/Courses/Courses';
 import Users from './containers/Users/Users';
 import Objectives from './containers/Objectives/Objectives';
+//Import the styling.
 import "./App.css";
 
 class App extends Component {
