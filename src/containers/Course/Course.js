@@ -3,6 +3,7 @@ import './Course.css';
 
 class Course extends Component {
 
+    //To track this component in the console.
     componentDidMount () {
         console.log("[Course] component did mount.");
         console.log("Here are your props");
@@ -54,6 +55,7 @@ class Course extends Component {
                     </div>;
         }
 
+        //Display the JSX "output" variable. 
         return (
             <div className="Course">
                 {output}
