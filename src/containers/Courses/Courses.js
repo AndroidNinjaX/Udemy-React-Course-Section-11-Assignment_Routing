@@ -5,9 +5,9 @@ import { NavLink } from 'react-router-dom';
 import Course from '../Course/Course';
 //Import Route
 import { Route } from 'react-router-dom';
-
 import './Courses.css';
 
+//This component is responsible for displaying all of our individual courses.
 class Courses extends Component {
     state = {
         courses: [
@@ -34,6 +34,7 @@ class Courses extends Component {
 
     render () {
         /*------------------
+        Make a variable of courses to output as JSX.
         -Itterate through the "state.courses" and return each one as a linked component.
             -Set each link to the "title".
             -Set the "key" to the "id" of the course.
@@ -47,6 +48,7 @@ class Courses extends Component {
                             );
                         } );
 
+        //Return our JSX and also single "course" if clicked on any of them.
         return (
             <div>
                 <h1>Amazing Udemy Courses</h1>

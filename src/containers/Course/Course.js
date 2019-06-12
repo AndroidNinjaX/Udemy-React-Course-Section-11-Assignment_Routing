@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Course.css';
 
+//This component is to display a single course.
 class Course extends Component {
 
     //To track this component in the console.
