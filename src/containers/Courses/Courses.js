@@ -42,6 +42,7 @@ class Courses extends Component {
                 <h1>Amazing Udemy Courses</h1>
                 <section className="Courses">
                     {
+                        //Itterate through the "state.courses" and return each one as a linked component.
                         this.state.courses.map( course => {
                             return (
                                 <NavLink to={"/courses/" + course.title} key={course.id}>

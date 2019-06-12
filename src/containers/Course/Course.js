@@ -18,6 +18,7 @@ class Course extends Component {
 
     componentWillUnmount () {
         console.log("[Course] component unmounted.");
+        console.log(this.props);
         console.log("****************************************");
     }
 
