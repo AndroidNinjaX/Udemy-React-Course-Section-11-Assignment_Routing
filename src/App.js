@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 //Import Route from 'react-router-dom'
 import { BrowserRouter, Route, NavLink, Switch, Redirect } from 'react-router-dom';
+import Home from './containers/Home/Home';
 import Courses from './containers/Courses/Courses';
 import Users from './containers/Users/Users';
 import Objectives from './containers/Objectives/Objectives';
@@ -39,14 +40,14 @@ class App extends Component {
             -If a link is unavaiable, render 404.
           ------------------*/}
           <Switch>
-            <Route path="/" exact render={() => <h1>Home</h1>} />
+            <Route path="/" exact component={Home} />
             <Route path="/courses" component={Courses} />
             <Route path="/users" component={Users} />
             <Route path="/objectives" component={Objectives} />
             <Redirect from="/all-courses" to="/courses" />
             <Route render={() => <h1>404 Not Found</h1>} />
           </Switch>
-          
+
         </div>
       </BrowserRouter>
     );
