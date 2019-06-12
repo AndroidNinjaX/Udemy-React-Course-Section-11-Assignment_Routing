@@ -1,9 +1,25 @@
+# This is the Section 11 Assignment 3 of the Udemy React Course: [React - The Complete Guide](https://www.udemy.com/react-the-complete-guide-incl-redux/)
+
+## This assignment was about Routing in React.
+
+### Here are the Objectives
+
+* Add Routes to load "Users" and "Courses" on different pages (by entering a URL, without Links)
+* Add a simple navigation with two links => One leading to "Users", one leading to "Courses"
+* Make the courses in "Courses" clickable by adding a link and load the "Course" component in the place of "Courses" (without passing any data for now)
+* Pass the course ID to the "Course" page and output it there
+* Pass the course title to the "Course" page - pass it as a param or score bonus points by passing it as query params (you need to manually parse them though!)
+* Load the "Course" component as a nested component of "Courses"
+* Add a 404 error page and render it for any unknown routes
+* Redirect requests to /all-courses to /courses (=> Your "Courses" page)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
-## Table of Contents
+### Table of Contents
 
 - [Updating to New Releases](#updating-to-new-releases)
 - [Sending Feedback](#sending-feedback)
