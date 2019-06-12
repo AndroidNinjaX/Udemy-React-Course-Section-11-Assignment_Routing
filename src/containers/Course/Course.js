@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import './Course.css';
 
 class Course extends Component {
+
+    componentDidMount () {
+        console.log("[Course] component did mount.");
+        console.log("Here are your props");
+        console.log(this.props);
+    };
+    
     render () {
         return (
             <div className="Course">
