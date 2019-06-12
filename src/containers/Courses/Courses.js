@@ -15,6 +15,18 @@ class Courses extends Component {
         ]
     }
 
+    componentDidMount () {
+        console.log("[Course's] component did mount.");
+    }
+
+    componentDidUpdate () {
+        console.log("[Course's] component updated.");
+    }
+
+    componentWillUnmount () {
+        console.log("[Course's] component unmounted.");
+    }
+
     selectCourseHandler(id) {
         return(
             <Course courseID={id}/>
