@@ -21,7 +21,9 @@ class App extends Component {
             <p><NavLink to="/" exact activeClassName="activeClass">Home</NavLink></p>
             <p><NavLink to="/Courses" exact activeClassName="activeClass">Courses</NavLink></p>
             <p><NavLink to="/Users" exact activeClassName="activeClass">Users</NavLink></p>
-            <p><NavLink to="/Objectives" exact activeClassName="activeClass">Project Objectives</NavLink></p>
+            <p>
+              <NavLink to="/Objectives" exact activeClassName="activeClass">Assignment Objectives</NavLink>
+            </p>
           </nav>
 
           {/*------------------
