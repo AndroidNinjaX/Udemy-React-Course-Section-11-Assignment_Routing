@@ -1,6 +1,7 @@
 # This is the Section 11 Assignment 3 of the Udemy React Course: [React - The Complete Guide](https://www.udemy.com/react-the-complete-guide-incl-redux/)
 
 ### This assignment was to demonstrate Routing in React.
+________________________________________________________________________
 
 ## Here are the Objectives
 
@@ -14,6 +15,7 @@
 * Redirect requests to /all-courses to /courses (=> Your "Courses" page)
 
 ## To use this application follow the steps in the "how-to-use.txt" file.
+________________________________________________________________________
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
